@@ -1,46 +1,46 @@
-# name = "cloudflare-docker-proxy"
-# compatibility_date = "2023-12-01"
+name = "cloudflare-docker-proxy"
+compatibility_date = "2023-12-01"
 
-# [dev]
-# ip = "0.0.0.0"
-# port = 8787
-# local_protocol = "http"
+[dev]
+ip = "0.0.0.0"
+port = 8787
+local_protocol = "http"
 
-# [env.dev.vars]
-# MODE = "debug"
-# TARGET_UPSTREAM = "https://registry-1.docker.io"
+[env.dev.vars]
+MODE = "debug"
+TARGET_UPSTREAM = "https://registry-1.docker.io"
 
-# [env.production]
-# name = "cloudflare-docker-proxy"
-# routes = [
-#   { pattern = "docker.liluo.space", custom_domain = true },
-#   { pattern = "quay.liluo.space", custom_domain = true },
-#   { pattern = "gcr.liluo.space", custom_domain = true },
-#   { pattern = "k8s-gcr.liluo.space", custom_domain = true },
-#   { pattern = "k8s.liluo.space", custom_domain = true },
-#   { pattern = "ghcr.liluo.space", custom_domain = true },
-#   { pattern = "cloudsmith.liluo.space", custom_domain = true },
-# ]
+[env.production]
+name = "cloudflare-docker-proxy"
+routes = [
+  { pattern = "docker.liluo.space", custom_domain = true },
+  { pattern = "quay.liluo.space", custom_domain = true },
+  { pattern = "gcr.liluo.space", custom_domain = true },
+  { pattern = "k8s-gcr.liluo.space", custom_domain = true },
+  { pattern = "k8s.liluo.space", custom_domain = true },
+  { pattern = "ghcr.liluo.space", custom_domain = true },
+  { pattern = "cloudsmith.liluo.space", custom_domain = true },
+]
 
-# [env.production.vars]
-# MODE = "production"
-# TARGET_UPSTREAM = ""
+[env.production.vars]
+MODE = "production"
+TARGET_UPSTREAM = ""
 
-# [env.staging]
-# name = "cloudflare-docker-proxy-staging"
-# route = { pattern = "docker-staging.liluo.space", custom_domain = true }
+[env.staging]
+name = "cloudflare-docker-proxy-staging"
+route = { pattern = "docker-staging.liluo.space", custom_domain = true }
 
-# [env.staging.vars]
-# MODE = "staging"
-# TARGET_UPSTREAM = ""
-name = "dockerhub-proxy"
-type = "javascript"
-account_id = "YOUR_ACCOUNT_ID"
-workers_dev = true
+[env.staging.vars]
+MODE = "staging"
+TARGET_UPSTREAM = ""
+# name = "dockerhub-proxy"
+# type = "javascript"
+# account_id = "YOUR_ACCOUNT_ID"
+# workers_dev = true
 
-[site]
-bucket = "./public"
-entry-point = "workers-site"
+# [site]
+# bucket = "./public"
+# entry-point = "workers-site"
 
-[build]
-command = "npm run build"
+# [build]
+# command = "npm run build"

@@ -12,6 +12,7 @@ const routes = {
   "docker.liluo.space": dockerHub,
   "quay.liluo.space": "https://quay.io",
   "gcr.liluo.space": "https://gcr.io",
+  "cgr.liluo.space": "https://cgr.dev",
   "k8s-gcr.liluo.space": "https://k8s.gcr.io",
   "k8s.liluo.space": "https://registry.k8s.io",
   "ghcr.liluo.space": "https://ghcr.io",

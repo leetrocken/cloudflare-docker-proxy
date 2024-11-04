@@ -20,6 +20,7 @@ routes = [
   { pattern = "k8s.liluo.space", custom_domain = true },
   { pattern = "ghcr.liluo.space", custom_domain = true },
   { pattern = "cloudsmith.liluo.space", custom_domain = true },
+  { pattern = "cgr.liluo.space", custom_domain = true },
 ]
 
 [env.production.vars]

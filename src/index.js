@@ -17,6 +17,7 @@ const routes = {
   "k8s.liluo.space": "https://registry.k8s.io",
   "ghcr.liluo.space": "https://ghcr.io",
   "cloudsmith.liluo.space": "https://docker.cloudsmith.io",
+  "docker1.liluo.space": "https://registry.docker.io",
 
   // staging
   "docker-staging.liluo.space": dockerHub,

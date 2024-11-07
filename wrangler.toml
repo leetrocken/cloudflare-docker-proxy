@@ -21,6 +21,7 @@ routes = [
   { pattern = "ghcr.liluo.space", custom_domain = true },
   { pattern = "cloudsmith.liluo.space", custom_domain = true },
   { pattern = "cgr.liluo.space", custom_domain = true },
+  { pattern = "docker1.liluo.space", custom_domain = true },
 ]
 
 [env.production.vars]

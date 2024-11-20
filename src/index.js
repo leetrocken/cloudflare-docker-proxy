@@ -18,6 +18,7 @@ const routes = {
   "ghcr.liluo.space": "https://ghcr.io",
   "cloudsmith.liluo.space": "https://docker.cloudsmith.io",
   "docker1.liluo.space": "https://registry.docker.io",
+  "publicaws.liluo.space": "https://public.ecr.aws",
 
   // staging
   "docker-staging.liluo.space": dockerHub,

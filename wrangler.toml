@@ -24,6 +24,7 @@ routes = [
   { pattern = "docker1.liluo.space", custom_domain = true },
   { pattern = "publicaws.liluo.space", custom_domain = true },
   { pattern = "xai.liluo.space", custom_domain = true },
+  {pattern = "authdo.liluo.space", custom_domain = true},
 ]
 
 [env.production.vars]

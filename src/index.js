@@ -20,6 +20,7 @@ const routes = {
   "docker1.liluo.space": "https://registry.docker.io",
   "publicaws.liluo.space": "https://public.ecr.aws",
   "xai.liluo.space": "https://api.x.ai",
+  "authdo.liluo.space": "https://auth.docker.io",
 
   // staging
   "docker-staging.liluo.space": dockerHub,

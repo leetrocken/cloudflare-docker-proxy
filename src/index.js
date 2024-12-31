@@ -170,24 +170,24 @@ async function fetchToken(wwwAuthenticate, scope, authorization) {
   }
   return await fetch(url, { method: "GET", headers: headers });
 }
-addEventListener("fetch", event => {
-  event.respondWith(handleRequest(event.request));
-});
+// addEventListener("fetch", event => {
+//   event.respondWith(handleRequest(event.request));
+// });
 
-async function handleRequest(request) {
-  const url = new URL(request.url);
+// async function handleRequest(request) {
+//   const url = new URL(request.url);
   
-  // 将 Docker Hub 网页请求代理到国内源
-  if (url.hostname === "drhub.docker.com") {
-    const newUrl = new URL("https://drhub.liluo.space" + url.pathname + url.search);
-    const newRequest = new Request(newUrl, {
-      method: request.method,
-      headers: request.headers,
-      redirect: "follow"
-    });
-    return fetch(newRequest);
-  }
+//   // 将 Docker Hub 网页请求代理到国内源
+//   if (url.hostname === "drhub.docker.com") {
+//     const newUrl = new URL("https://drhub.liluo.space" + url.pathname + url.search);
+//     const newRequest = new Request(newUrl, {
+//       method: request.method,
+//       headers: request.headers,
+//       redirect: "follow"
+//     });
+//     return fetch(newRequest);
+//   }
 
-  // 其他请求直接转发
-  return fetch(request);
-}
+//   // 其他请求直接转发
+//   return fetch(request);
+// }
